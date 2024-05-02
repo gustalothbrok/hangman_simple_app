@@ -77,7 +77,6 @@ class GameController {
   static List<String> selectRandomWord(List<String> words) {
     var randomNum = Random().nextInt(listWords.length);
     GameController.tipWord = listTips[randomNum];
-    print(GameController.tipWord);
     var word = words[randomNum].split('');
     for (var character in word) {
       if (character == ' ') {
